@@ -74,8 +74,8 @@
           <a class="navbar-brand" href="#">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">tesla</div>
           <div class="label-container">
-            <span class="label label-success">Passed: 0</span>
-            <span class="label label-danger">Failed: 1</span>
+            <span class="label label-success">Passed: 1</span>
+            <span class="label label-danger">Failed: 0</span>
           </div>
         </div>
       </div>
@@ -101,7 +101,8 @@
               <pre>
 Running Scenario: Sign-up to PayPal
 done: Personal_signup_page
-check presence
+In: Create_account_page
+Done: Create_account_page
               </pre>
             </div>
           </div>
@@ -121,8 +122,8 @@ check presence
             <i class="glyphicon glyphicon-chevron-down"></i>
             <b>Feature:</b>PayPal Sign-up
             <span class="label-container">
+              <span class="label label-success">1</span>
               
-              <span class="label label-danger">1</span>
             </span>
           </a>
         </h4>
@@ -138,10 +139,10 @@ check presence
                     <i class="glyphicon glyphicon-chevron-down"></i>
                     <b>Scenario:</b>Sign-up to PayPal
                     <span class="label-container">
-                      <span class="label label-success" title="Passed">1</span>
+                      <span class="label label-success" title="Passed">4</span>
                       
-                      <span class="label label-warning" title="Skipped">2</span>
-                      <span class="label label-danger" title="Failed">1</span>
+                      
+                      
                     </span>
                   </a>
                 </h4>
@@ -169,107 +170,13 @@ check presence
                     <p class="scenario-container">
                     
                       
-                        <span class="label label-danger" title="Failed"><i class="glyphicon glyphicon-remove"></i></span>
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
                       
                     
                       <span class="text"><span class="keyword highlight">Given </span> I sign up for personal account</span>
                     
                       
 
-                      
-                        <a href="#error001" data-toggle="collapse">+ Show Error</a> 
-                        <div id="error001" class="collapse">
-                          ReferenceError: driver is not defined
-  at TeslaDriver.sync (/Users/kugajjar/Documents/workspace/tesla/test/lib/tesla_driver.js:36:5)
-  at new Create_account_page (/Users/kugajjar/Documents/workspace/tesla/test/pages/create_account_page.js:12:13)
-  at WorldConstructor.<anonymous> (/Users/kugajjar/Documents/workspace/tesla/test/features/step_definitions/signup_steps.js:12:37)
-  at Object.invoke (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/support_code/step_definition.js:88:14)
-  at Object.execute (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/ast/step.js:175:22)
-  at Object.acceptVisitor (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/ast/step.js:161:12)
-  at Object.executeStep (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:290:12)
-  at Object.processStep (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:285:14)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:127:16
-  at callUserFunctionAndBroadcastAfterEvent (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:151:9)
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
-  at Object.forEach (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
-  at broadcastToListeners (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
-  at onRuntimeListenersComplete (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:174:9)
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:59:11
-  at Object.hear (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/listener.js:8:9)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:179:51
-  at processItem (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:58:9)
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:50:11)
-  at Object.forEach (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
-  at broadcastToListeners (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
-  at Object.broadcastEvent (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:170:7)
-  at Object.broadcastBeforeEvent (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:161:12)
-  at Object.broadcastEventAroundUserFunction (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:145:12)
-  at Object.visitStep (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:124:12)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/ast/scenario.js:98:17
-  at processItem (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:58:9)
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:50:11)
-  at Object.forEach (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
-  at Object.instructVisitorToVisitSteps (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/ast/scenario.js:97:13)
-  at Object.instructVisitorToVisitScenarioSteps (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/ast/scenario.js:93:12)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/ast/scenario.js:78:14
-  at Object.instructVisitorToVisitBackgroundSteps (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/ast/scenario.js:88:9)
-  at Object.acceptVisitor (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/ast/scenario.js:77:12)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:67:24
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:59:11
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
-  at Object.forEach (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
-  at broadcastToListeners (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
-  at onRuntimeListenersComplete (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:174:9)
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:59:11
-  at handleStepResultEvent (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/listener/json_formatter.js:166:5)
-  at Object.hear (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/listener.js:6:9)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:179:51
-  at processItem (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:58:9)
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:50:11)
-  at Object.forEach (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
-  at broadcastToListeners (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
-  at Object.broadcastEvent (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:170:7)
-  at Object.visitStepResult (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:140:12)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/ast/step.js:162:17
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/support_code/step_definition.js:63:11
-  at WorldConstructor.<anonymous> (/Users/kugajjar/Documents/workspace/tesla/test/features/step_definitions/hooks.js:19:9)
-  at Object.invoke (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/support_code/step_definition.js:88:14)
-  at Object.execute (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/ast/step.js:175:22)
-  at Object.acceptVisitor (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/ast/step.js:161:12)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:110:20
-  at processItem (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:58:9)
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:50:11)
-  at Object.forEach (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
-  at Object.visitBeforeSteps (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:109:19)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:66:18
-  at callUserFunctionAndBroadcastAfterEvent (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:151:9)
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
-  at Object.forEach (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
-  at broadcastToListeners (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
-  at onRuntimeListenersComplete (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:174:9)
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:52:11)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:59:11
-  at handleBeforeScenarioEvent (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/listener/json_formatter.js:116:5)
-  at Object.hear (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/listener.js:6:9)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:179:51
-  at processItem (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:58:9)
-  at iterate (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:50:11)
-  at Object.forEach (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/type/collection.js:62:7)
-  at broadcastToListeners (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:178:19)
-  at Object.broadcastEvent (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:170:7)
-  at Object.broadcastBeforeEvent (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:161:12)
-  at Object.broadcastEventAroundUserFunction (/Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:145:12)
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/runtime/ast_tree_walker.js:63:14
-  at /Users/kugajjar/Documents/workspace/tesla/node_modules/cucumber/lib/cucumber/support_code/library.js:93:11
-  at process._tickDomainCallback (node.js:463:13)
-  at Function.Module.runMain (module.js:499:11)
-  at startup (node.js:119:16)
-  at node.js:906:3
-
-                        </div>
                       
 
                        
@@ -280,7 +187,7 @@ check presence
                     <p class="scenario-container">
                     
                       
-                        <span class="label label-warning" title="Skipped"><i class="glyphicon glyphicon-minus"></i></span>
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
                       
                     
                       <span class="text"><span class="keyword highlight">And </span> I input all required information</span>
@@ -297,7 +204,7 @@ check presence
                     <p class="scenario-container">
                     
                       
-                        <span class="label label-warning" title="Skipped"><i class="glyphicon glyphicon-minus"></i></span>
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
                       
                     
                       <span class="text"><span class="keyword highlight">Then </span> I successfully signed up for new account</span>

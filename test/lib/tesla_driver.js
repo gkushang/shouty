@@ -4,7 +4,7 @@
 
 var TeslaDriver = function TeslaDriver(nemo) {
     this.nemo = nemo;
-    this.waitTimeOut = 10000;
+    this.waitTimeOut = 300 * 1000;
 }
 
 TeslaDriver.prototype.click = function cilck(locator) {
