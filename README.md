@@ -13,11 +13,19 @@ ln -s /Users/yourname/path/to/selenium-server-standalone-2.42.1.jar /usr/local/b
 Download Chromedriver to your $HOME path
 
 
-
 Run Cucumber tests
 
 ```bash
 $ npm install
-$ grunt cucumberjs --require /test/features/step_definitions
+$ grunt cucumberjs --require test/features/step_definitions
+```
+
+# WebStorm configuration
+
+```bash
+Select Node.js and set below configuration
+Node Interpreter: /usr/local/bin/node
+JavaScript file: /usr/local/lib/node_modules/grunt-cli/bin/grunt
+Application Parameters: cucumberjs
 ```
 # tesla
