@@ -1,4 +1,6 @@
-# tesla acceptance tests - Node / Grunt Cucumber
+# Node, Grunt Cucumberjs
+
+## tesla acceptance tests
 
 Grunt task to run Cucumber tests with Nemo and produces HTML test reports 
 
