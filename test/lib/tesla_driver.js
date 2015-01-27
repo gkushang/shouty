@@ -4,6 +4,7 @@
 
 var TeslaDriver = function TeslaDriver(nemo) {
     this.nemo = nemo;
+    this.waitTimeOut = 10000;
 }
 
 TeslaDriver.prototype.click = function cilck(locator) {
@@ -18,5 +19,10 @@ TeslaDriver.prototype.clearAndType = function clearAndType(locator, text) {
     this.nemo.drivex.find(locator).clear();
     this.nemo.drivex.find(locator).sendKeys(text);
 };
+
+TeslaDriver.prototype.sync = function sync(locator) {
+    this.nemo.drivex.waitForElement(locator, this.waitTimeOut, locator.locator + " : did not display");
+};
+
 
 module.exports = TeslaDriver;

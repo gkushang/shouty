@@ -9,7 +9,7 @@ var TeslaDriver = require('../lib/tesla_driver');
 
 function Create_account_page(nemo) {
     this.td = new TeslaDriver(nemo);
-    nemo.drivex.waitForElement(this.locator.firstName, 10000, "first name did not display");
+    this.td.sync(this.locator.firstName);
 };
 
 Create_account_page.prototype.locator = {
