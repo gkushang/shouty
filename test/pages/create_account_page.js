@@ -46,7 +46,7 @@ function locator (){
                 "type": "id"
             },
 
-            "phoneOption": {
+            phoneOption: {
                 "locator": "phoneOption",
                 "type": "id"
             },
