@@ -13,17 +13,20 @@ function Account_page(nemo) {
 
 };
 
-Account_page.prototype.locator = {
+function locator (){
 
-    "continue": {
-        "locator": "personalSignUpForm",
-        "type": "id"
-    }
+   return {
+
+        continue: {
+            "locator": "personalSignUpForm",
+            "type": "id"
+        }
+   }
 };
 
 Account_page.prototype.chooseAccountType = function chooseAccountType(accountType) {
 
-    this.td.click(this.locator.continue);
+    this.td.click(locator().continue);
 
     return Q.resolve();
 };

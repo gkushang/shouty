@@ -5,4 +5,3 @@ Feature: PayPal Sign-up
     Given I sign up for personal account
     And I input all required information
     Then I successfully signed up for new account
-
