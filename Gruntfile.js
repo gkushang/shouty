@@ -8,13 +8,16 @@ module.exports = function (grunt) {
                 options: {
                     format: 'html',
                     output: 'test/report/report.html',
-                    theme: 'bootstrap'
+                    theme: 'bootstrap',
+                    debug: true
                 },
                 my_features: ['test/features/']
             }
         });
 
     grunt.loadNpmTasks('grunt-cucumberjs');
+
+    grunt.loadNpmTasks('grunt-debug-task');
 
     grunt.registerTask('default', ['jshint', 'nodemon']);
 

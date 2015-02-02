@@ -27,7 +27,8 @@ module.exports = function(grunt) {
             saveJson: false,
             theme: 'foundation',
             templateDir: 'features/templates',
-            tags: ''
+            tags: '',
+            debug: true
         });
 
         // resolve options set via cli

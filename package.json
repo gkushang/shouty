@@ -18,13 +18,16 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-csscomb": "~2.0.1",
     "grunt-cucumberjs": "^0.5.4",
+    "grunt-debug-task": "^0.1.5",
+    "nconf": "~0.7.1",
     "nemo": "~0.2.6",
     "nemo-drivex": "~0.1.5",
     "nemo-locatex": "~0.1.4",
     "nemo-mocha-factory": "~0.2.1",
     "nemo-view": "~0.2.5",
+    "q": "1.0.0",
     "sauce-connect-launcher": "0.6.1",
-    "q": "1.0.0"
+    "underscore": "^1.7.0"
   },
   "dependencies": {
     "node-assertthat": "^0.2.1"
