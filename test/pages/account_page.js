@@ -13,6 +13,11 @@ function Account_page(nemo) {
 
 };
 
+function td() {
+
+    return this.td;
+};
+
 function locator (){
 
    return {
@@ -21,7 +26,7 @@ function locator (){
             "locator": "personalSignUpForm",
             "type": "id"
         }
-   }
+   };
 };
 
 Account_page.prototype.chooseAccountType = function chooseAccountType(accountType) {
