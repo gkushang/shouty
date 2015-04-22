@@ -1,22 +1,27 @@
+var Network =  require('../../lib/network'),
+    Shout =  require('../../lib/shouter'),
+    Listener =  require('../../lib/listener');
 
-module.exports = function () {
+var myHooks = function () {
 
     this.World = require("../../cuke_world/world").World;
 
-    this.After(function (scenario, next) {
-        this.driver.quit().then(function () {
-            next();
-        });
+    this.After(function(scenario, callback) {
 
-    });
+        this.driver.quit();
+        callback();
 
-    this.Before(function (scenario, next) {
+     });
 
-        console.log('Running Scenario: ' + scenario.getName());
-        debugger;
-        this.navigate.to(this.props.targetBaseUrl);
+    this.Before(function (scenario, callback) {
 
-        next();
+        console.log("running \"" + scenario.getName() + "\"");
+        this.network = new Network();
+        this.sean = new Shout(this.network);
+        this.lucy = new Listener(this.network);
 
+        callback();
     });
 };
+
+module.exports = myHooks;
