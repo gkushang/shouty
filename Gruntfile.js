@@ -9,6 +9,9 @@ module.exports = function (grunt) {
                     format: 'html',
                     output: 'test/report/report.html',
                     theme: 'bootstrap',
+                    tags: grunt.option('tags'),
+                    strict: '',
+                    saveJson: true,
                     debug: true
                 },
                 my_features: ['test/features/']
