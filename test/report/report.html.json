@@ -1,0 +1,429 @@
+[
+	{
+		"id": "Hear-Shout",
+		"name": "Hear Shout",
+		"description": "\nIn order to shout to nearby shouty listeners\nI want to send a message\nSo that listeners can listen my shout if they are in my range\n\nPersonae:\n* Sean is a shouter\n* Lucy is a listener\n\nRules:\n* hear shouts within 1Km\n* shouts cannot be longer than 256 characters",
+		"line": 2,
+		"keyword": "Feature",
+		"tags": [
+			{
+				"name": "@shouty",
+				"line": 1
+			}
+		],
+		"uri": "/Users/kugajjar/Documents/workspace/shouty/test/features/shouty.feature",
+		"elements": [
+			{
+				"name": "Shouter shouts in range",
+				"id": "Hear-Shout;shouter-shouts-in-range",
+				"line": 18,
+				"keyword": "Scenario",
+				"description": "",
+				"type": "scenario",
+				"tags": [
+					{
+						"name": "@shout_in_range",
+						"line": 17
+					}
+				],
+				"steps": [
+					{
+						"keyword": "Before ",
+						"hidden": true,
+						"result": {
+							"duration": 682726,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy is 1000m away from Sean",
+						"line": 20,
+						"keyword": "Given ",
+						"result": {
+							"duration": 260250,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Sean shouts \"Hi SF!\"",
+						"line": 21,
+						"keyword": "When ",
+						"result": {
+							"duration": 499773,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy should hear \"Hi SF!\"",
+						"line": 22,
+						"keyword": "Then ",
+						"result": {
+							"duration": 1414544,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"keyword": "After ",
+						"hidden": true,
+						"result": {
+							"duration": 9180835,
+							"status": "passed"
+						},
+						"match": {}
+					}
+				],
+				"passed": 5,
+				"failed": 0,
+				"notdefined": 0,
+				"skipped": 0
+			},
+			{
+				"name": "Shouter shouts out of range",
+				"id": "Hear-Shout;shouter-shouts-out-of-range",
+				"line": 26,
+				"keyword": "Scenario",
+				"description": "",
+				"type": "scenario",
+				"tags": [
+					{
+						"name": "@shout_out_of_range",
+						"line": 25
+					}
+				],
+				"steps": [
+					{
+						"keyword": "Before ",
+						"hidden": true,
+						"result": {
+							"duration": 409499,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy is 1001m away from Sean",
+						"line": 28,
+						"keyword": "Given ",
+						"result": {
+							"duration": 67088,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Sean shouts \"Hi SF!\"",
+						"line": 29,
+						"keyword": "When ",
+						"result": {
+							"duration": 261282,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy should not hear \"Hi SF!\"",
+						"line": 30,
+						"keyword": "Then ",
+						"result": {
+							"duration": 647455,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"keyword": "After ",
+						"hidden": true,
+						"result": {
+							"duration": 6973089,
+							"status": "passed"
+						},
+						"match": {}
+					}
+				],
+				"passed": 5,
+				"failed": 0,
+				"notdefined": 0,
+				"skipped": 0
+			},
+			{
+				"name": "Sean shouts short-enough message within range",
+				"id": "Hear-Shout;sean-shouts-short-enough-message-within-range",
+				"line": 34,
+				"keyword": "Scenario",
+				"description": "",
+				"type": "scenario",
+				"tags": [
+					{
+						"name": "@short_message_in_range",
+						"line": 33
+					}
+				],
+				"steps": [
+					{
+						"keyword": "Before ",
+						"hidden": true,
+						"result": {
+							"duration": 88259,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy is 100m away from Sean",
+						"line": 36,
+						"keyword": "Given ",
+						"result": {
+							"duration": 27119,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Sean shouts \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"",
+						"line": 37,
+						"keyword": "When ",
+						"result": {
+							"duration": 102074,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy should hear \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"",
+						"line": 38,
+						"keyword": "Then ",
+						"result": {
+							"duration": 355559,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"keyword": "After ",
+						"hidden": true,
+						"result": {
+							"duration": 9469734,
+							"status": "passed"
+						},
+						"match": {}
+					}
+				],
+				"passed": 5,
+				"failed": 0,
+				"notdefined": 0,
+				"skipped": 0
+			},
+			{
+				"name": "Sean shouts too-long message within range",
+				"id": "Hear-Shout;sean-shouts-too-long-message-within-range",
+				"line": 42,
+				"keyword": "Scenario",
+				"description": "",
+				"type": "scenario",
+				"tags": [
+					{
+						"name": "@long_message_in_range",
+						"line": 41
+					}
+				],
+				"steps": [
+					{
+						"keyword": "Before ",
+						"hidden": true,
+						"result": {
+							"duration": 164314,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy is 100m away from Sean",
+						"line": 44,
+						"keyword": "Given ",
+						"result": {
+							"duration": 19343,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Sean shouts \"YXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"",
+						"line": 45,
+						"keyword": "When ",
+						"result": {
+							"duration": 18342,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy should not hear \"YXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"",
+						"line": 46,
+						"keyword": "Then ",
+						"result": {
+							"duration": 275077,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"keyword": "After ",
+						"hidden": true,
+						"result": {
+							"duration": 6752762,
+							"status": "passed"
+						},
+						"match": {}
+					}
+				],
+				"passed": 5,
+				"failed": 0,
+				"notdefined": 0,
+				"skipped": 0
+			},
+			{
+				"name": "Sean shouts short-enough message within range",
+				"id": "Hear-Shout;sean-shouts-short-enough-message-within-range",
+				"line": 50,
+				"keyword": "Scenario",
+				"description": "",
+				"type": "scenario",
+				"tags": [
+					{
+						"name": "@short_message_out_of_range",
+						"line": 49
+					}
+				],
+				"steps": [
+					{
+						"keyword": "Before ",
+						"hidden": true,
+						"result": {
+							"duration": 150781,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy is 1001m away from Sean",
+						"line": 52,
+						"keyword": "Given ",
+						"result": {
+							"duration": 23191,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Sean shouts \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"",
+						"line": 53,
+						"keyword": "When ",
+						"result": {
+							"duration": 27517,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy should not hear \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"",
+						"line": 54,
+						"keyword": "Then ",
+						"result": {
+							"duration": 228850,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"keyword": "After ",
+						"hidden": true,
+						"result": {
+							"duration": 6911528,
+							"status": "passed"
+						},
+						"match": {}
+					}
+				],
+				"passed": 5,
+				"failed": 0,
+				"notdefined": 0,
+				"skipped": 0
+			},
+			{
+				"name": "Sean shouts too-long message out of range",
+				"id": "Hear-Shout;sean-shouts-too-long-message-out-of-range",
+				"line": 58,
+				"keyword": "Scenario",
+				"description": "",
+				"type": "scenario",
+				"tags": [
+					{
+						"name": "@long_message_out_of_range",
+						"line": 57
+					}
+				],
+				"steps": [
+					{
+						"keyword": "Before ",
+						"hidden": true,
+						"result": {
+							"duration": 132511,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy is 1001m away from Sean",
+						"line": 60,
+						"keyword": "Given ",
+						"result": {
+							"duration": 26548,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Sean shouts \"YXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"",
+						"line": 61,
+						"keyword": "When ",
+						"result": {
+							"duration": 35646,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"name": "Lucy should not hear \"YXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"",
+						"line": 62,
+						"keyword": "Then ",
+						"result": {
+							"duration": 374162,
+							"status": "passed"
+						},
+						"match": {}
+					},
+					{
+						"keyword": "After ",
+						"hidden": true,
+						"result": {
+							"duration": 6056164,
+							"status": "passed"
+						},
+						"match": {}
+					}
+				],
+				"passed": 5,
+				"failed": 0,
+				"notdefined": 0,
+				"skipped": 0
+			}
+		],
+		"passed": 6,
+		"failed": 0,
+		"relativeFolder": ""
+	}
+]

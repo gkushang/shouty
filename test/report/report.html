@@ -72,7 +72,7 @@
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Cucumberjs Report</a>
-          <div class="project-name visible-md visible-lg">tesla</div>
+          <div class="project-name visible-md visible-lg">shouty</div>
           <div class="label-container">
             <span class="label label-success">Passed: 1</span>
             <span class="label label-danger">Failed: 0</span>
@@ -99,11 +99,12 @@
           <div id="logOutput" class="panel-collapse collapse">
             <div class="panel-body">
               <pre>
-running tests on qa environement
-Running Scenario: Sign-up to PayPal
-done: Personal_signup_page
-In: Create_account_page
-Done: Create_account_page
+running "Shouter shouts in range"
+running "Shouter shouts out of range"
+running "Sean shouts short-enough message within range"
+running "Sean shouts too-long message within range"
+running "Sean shouts short-enough message within range"
+running "Sean shouts too-long message out of range"
               </pre>
             </div>
           </div>
@@ -121,9 +122,9 @@ Done: Create_account_page
           <a data-toggle="collapse" href="#collapseFeature0">
             <i class="glyphicon glyphicon-chevron-right"></i>
             <i class="glyphicon glyphicon-chevron-down"></i>
-            <b>Feature:</b>PayPal Sign-up
+            <b>Feature:</b>Hear Shout
             <span class="label-container">
-              <span class="label label-success">1</span>
+              <span class="label label-success">6</span>
               
             </span>
           </a>
@@ -138,7 +139,7 @@ Done: Create_account_page
                   <a data-toggle="collapse" href="#collapseScenario00">
                     <i class="glyphicon glyphicon-chevron-right"></i>
                     <i class="glyphicon glyphicon-chevron-down"></i>
-                    <b>Scenario:</b>Sign-up to PayPal
+                    <b>Scenario:</b>Shouter shouts in range
                     <span class="label-container">
                       <span class="label label-success" title="Passed">5</span>
                       
@@ -174,7 +175,7 @@ Done: Create_account_page
                         <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
                       
                     
-                      <span class="text"><span class="keyword highlight">Given </span> I sign up for personal account</span>
+                      <span class="text"><span class="keyword highlight">Given </span> Lucy is 1000m away from Sean</span>
                     
                       
 
@@ -191,7 +192,7 @@ Done: Create_account_page
                         <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
                       
                     
-                      <span class="text"><span class="keyword highlight">And </span> I input all required information</span>
+                      <span class="text"><span class="keyword highlight">When </span> Sean shouts "Hi SF!"</span>
                     
                       
 
@@ -208,7 +209,547 @@ Done: Create_account_page
                         <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
                       
                     
-                      <span class="text"><span class="keyword highlight">Then </span> I successfully signed up for new account</span>
+                      <span class="text"><span class="keyword highlight">Then </span> Lucy should hear "Hi SF!"</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">After </span> </span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                  
+                </div>
+              </div>
+            </div>
+           
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapseScenario01">
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                    <i class="glyphicon glyphicon-chevron-down"></i>
+                    <b>Scenario:</b>Shouter shouts out of range
+                    <span class="label-container">
+                      <span class="label label-success" title="Passed">5</span>
+                      
+                      
+                      
+                    </span>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseScenario01" class="panel-collapse collapse">
+                <div class="panel-body">
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Before </span> </span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Given </span> Lucy is 1001m away from Sean</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">When </span> Sean shouts "Hi SF!"</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Then </span> Lucy should not hear "Hi SF!"</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">After </span> </span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                  
+                </div>
+              </div>
+            </div>
+           
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapseScenario02">
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                    <i class="glyphicon glyphicon-chevron-down"></i>
+                    <b>Scenario:</b>Sean shouts short-enough message within range
+                    <span class="label-container">
+                      <span class="label label-success" title="Passed">5</span>
+                      
+                      
+                      
+                    </span>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseScenario02" class="panel-collapse collapse">
+                <div class="panel-body">
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Before </span> </span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Given </span> Lucy is 100m away from Sean</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">When </span> Sean shouts "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Then </span> Lucy should hear "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">After </span> </span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                  
+                </div>
+              </div>
+            </div>
+           
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapseScenario03">
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                    <i class="glyphicon glyphicon-chevron-down"></i>
+                    <b>Scenario:</b>Sean shouts too-long message within range
+                    <span class="label-container">
+                      <span class="label label-success" title="Passed">5</span>
+                      
+                      
+                      
+                    </span>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseScenario03" class="panel-collapse collapse">
+                <div class="panel-body">
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Before </span> </span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Given </span> Lucy is 100m away from Sean</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">When </span> Sean shouts "YXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Then </span> Lucy should not hear "YXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">After </span> </span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                  
+                </div>
+              </div>
+            </div>
+           
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapseScenario04">
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                    <i class="glyphicon glyphicon-chevron-down"></i>
+                    <b>Scenario:</b>Sean shouts short-enough message within range
+                    <span class="label-container">
+                      <span class="label label-success" title="Passed">5</span>
+                      
+                      
+                      
+                    </span>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseScenario04" class="panel-collapse collapse">
+                <div class="panel-body">
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Before </span> </span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Given </span> Lucy is 1001m away from Sean</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">When </span> Sean shouts "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Then </span> Lucy should not hear "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">After </span> </span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                  
+                </div>
+              </div>
+            </div>
+           
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapseScenario05">
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                    <i class="glyphicon glyphicon-chevron-down"></i>
+                    <b>Scenario:</b>Sean shouts too-long message out of range
+                    <span class="label-container">
+                      <span class="label label-success" title="Passed">5</span>
+                      
+                      
+                      
+                    </span>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseScenario05" class="panel-collapse collapse">
+                <div class="panel-body">
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Before </span> </span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Given </span> Lucy is 1001m away from Sean</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">When </span> Sean shouts "YXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>
+                    
+                      
+
+                      
+
+                       
+
+                    
+                    </p>              
+                   
+                    <p class="scenario-container">
+                    
+                      
+                        <span class="label label-success" title="Success"><i class="glyphicon glyphicon-ok"></i></span>
+                      
+                    
+                      <span class="text"><span class="keyword highlight">Then </span> Lucy should not hear "YXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>
                     
                       
 
