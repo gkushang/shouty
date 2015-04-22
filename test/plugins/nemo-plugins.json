@@ -1,8 +1,6 @@
 {
     "plugins": {
-        "user": {
-            "module": "nemo-jaws/plugin/user"
-        },
+
         "drivex": {
             "module": "nemo-drivex",
             "register": true
@@ -13,6 +11,10 @@
         },
         "view": {
             "module": "nemo-view"
+        },
+        "saucelabs": {
+            "module": "nemo-saucelabs",
+            "register": true
         }
     }
 }
