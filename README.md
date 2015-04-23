@@ -8,7 +8,9 @@ Run Cucumber tests
 $ Install Node, https://www.npmjs.com/package/npm
 $ navigate to the shouty folder
 $ npm install
-$ cucumber-js --PATH TO FEATURES FOLDER-- e.g. /Users/Docuements/workspace/shouty/test/features/ OR grunt cucumberjs --require test/features/step_definitions (this will give you html report under report folder)
+$ cucumber-js PATH TO FEATURES FOLDER, e.g. cucumber-js /Users/Docuements/workspace/shouty/test/features/ 
+$ OR 
+$ grunt cucumberjs --require test/features/step_definitions (this will give you html report under report folder)
 ```
 
 # WebStorm configuration
