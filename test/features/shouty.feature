@@ -13,14 +13,12 @@ Feature: Hear Shout
   * hear shouts within 1Km
   * shouts cannot be longer than 256 characters
 
-
   @shout_in_range
   Scenario: Shouter shouts in range
 
-    Given Lucy is 1000m away from Sean
-    When Sean shouts "Hi SF!"
-    Then Lucy should hear "Hi SF!"
-
+    Given Lucy is within Sean's range
+    When Sean shouts
+    Then Lucy should hear Sean's message
 
   @shout_out_of_range
   Scenario: Shouter shouts out of range
